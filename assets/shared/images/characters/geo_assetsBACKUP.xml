@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="geo_assets.png">
+	<!-- Created with Adobe Animate version 21.0.5.40714 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Geo Down0000" x="0" y="0" width="256" height="468"/>
+	<SubTexture name="Geo Down0001" x="0" y="0" width="256" height="468"/>
+	<SubTexture name="Geo Down0002" x="0" y="0" width="256" height="468"/>
+	<SubTexture name="Geo Down0003" x="0" y="0" width="256" height="468"/>
+	<SubTexture name="Geo Down0004" x="0" y="0" width="256" height="468"/>
+	<SubTexture name="Geo Down0005" x="0" y="0" width="256" height="468"/>
+	<SubTexture name="Geo Down0006" x="0" y="0" width="256" height="468"/>
+	<SubTexture name="Geo Down0007" x="0" y="0" width="256" height="468"/>
+	<SubTexture name="Geo Down0008" x="0" y="0" width="256" height="468"/>
+	<SubTexture name="Geo Down0009" x="0" y="0" width="256" height="468"/>
+	<SubTexture name="Geo Down0010" x="0" y="0" width="256" height="468"/>
+	<SubTexture name="Geo Down0011" x="0" y="0" width="256" height="468"/>
+	<SubTexture name="Geo Down MISS0000" x="256" y="0" width="256" height="468"/>
+	<SubTexture name="Geo Down MISS0001" x="256" y="0" width="256" height="468"/>
+	<SubTexture name="Geo Down MISS0002" x="256" y="0" width="256" height="468"/>
+	<SubTexture name="Geo Down MISS0003" x="256" y="0" width="256" height="468"/>
+	<SubTexture name="Geo Down MISS0004" x="256" y="0" width="256" height="468"/>
+	<SubTexture name="Geo Down MISS0005" x="256" y="0" width="256" height="468"/>
+	<SubTexture name="Geo Idle0000" x="512" y="0" width="274" height="491" frameX="0" frameY="0" frameWidth="276" frameHeight="493"/>
+	<SubTexture name="Geo Idle0001" x="512" y="0" width="274" height="491" frameX="0" frameY="0" frameWidth="276" frameHeight="493"/>
+	<SubTexture name="Geo Idle0002" x="786" y="0" width="266" height="487" frameX="-6" frameY="-4" frameWidth="276" frameHeight="493"/>
+	<SubTexture name="Geo Idle0003" x="786" y="0" width="266" height="487" frameX="-6" frameY="-4" frameWidth="276" frameHeight="493"/>
+	<SubTexture name="Geo Idle0004" x="1052" y="0" width="256" height="483" frameX="-11" frameY="-6" frameWidth="276" frameHeight="493"/>
+	<SubTexture name="Geo Idle0005" x="1052" y="0" width="256" height="483" frameX="-11" frameY="-6" frameWidth="276" frameHeight="493"/>
+	<SubTexture name="Geo Idle0006" x="1052" y="0" width="256" height="483" frameX="-11" frameY="-6" frameWidth="276" frameHeight="493"/>
+	<SubTexture name="Geo Idle0007" x="1052" y="0" width="256" height="483" frameX="-11" frameY="-6" frameWidth="276" frameHeight="493"/>
+	<SubTexture name="Geo Idle0008" x="1308" y="0" width="266" height="488" frameX="-6" frameY="-3" frameWidth="276" frameHeight="493"/>
+	<SubTexture name="Geo Idle0009" x="1308" y="0" width="266" height="488" frameX="-6" frameY="-3" frameWidth="276" frameHeight="493"/>
+	<SubTexture name="Geo Idle0010" x="512" y="0" width="274" height="491" frameX="-2" frameY="-2" frameWidth="276" frameHeight="493"/>
+	<SubTexture name="Geo Idle0011" x="512" y="0" width="274" height="491" frameX="-2" frameY="-2" frameWidth="276" frameHeight="493"/>
+	<SubTexture name="Geo Left0000" x="1574" y="0" width="256" height="492"/>
+	<SubTexture name="Geo Left0001" x="1574" y="0" width="256" height="492"/>
+	<SubTexture name="Geo Left0002" x="1574" y="0" width="256" height="492"/>
+	<SubTexture name="Geo Left0003" x="1574" y="0" width="256" height="492"/>
+	<SubTexture name="Geo Left0004" x="1574" y="0" width="256" height="492"/>
+	<SubTexture name="Geo Left0005" x="1574" y="0" width="256" height="492"/>
+	<SubTexture name="Geo Left0006" x="1574" y="0" width="256" height="492"/>
+	<SubTexture name="Geo Left0007" x="1574" y="0" width="256" height="492"/>
+	<SubTexture name="Geo Left0008" x="1574" y="0" width="256" height="492"/>
+	<SubTexture name="Geo Left0009" x="1574" y="0" width="256" height="492"/>
+	<SubTexture name="Geo Left0010" x="1574" y="0" width="256" height="492"/>
+	<SubTexture name="Geo Left0011" x="1574" y="0" width="256" height="492"/>
+	<SubTexture name="Geo Left MISS0000" x="0" y="492" width="256" height="492"/>
+	<SubTexture name="Geo Left MISS0001" x="0" y="492" width="256" height="492"/>
+	<SubTexture name="Geo Left MISS0002" x="0" y="492" width="256" height="492"/>
+	<SubTexture name="Geo Left MISS0003" x="0" y="492" width="256" height="492"/>
+	<SubTexture name="Geo Left MISS0004" x="0" y="492" width="256" height="492"/>
+	<SubTexture name="Geo Left MISS0005" x="0" y="492" width="256" height="492"/>
+	<SubTexture name="Geo Right0000" x="256" y="492" width="258" height="497"/>
+	<SubTexture name="Geo Right0001" x="256" y="492" width="258" height="497"/>
+	<SubTexture name="Geo Right0002" x="256" y="492" width="258" height="497"/>
+	<SubTexture name="Geo Right0003" x="256" y="492" width="258" height="497"/>
+	<SubTexture name="Geo Right0004" x="256" y="492" width="258" height="497"/>
+	<SubTexture name="Geo Right0005" x="256" y="492" width="258" height="497"/>
+	<SubTexture name="Geo Right0006" x="256" y="492" width="258" height="497"/>
+	<SubTexture name="Geo Right0007" x="256" y="492" width="258" height="497"/>
+	<SubTexture name="Geo Right0008" x="256" y="492" width="258" height="497"/>
+	<SubTexture name="Geo Right0009" x="256" y="492" width="258" height="497"/>
+	<SubTexture name="Geo Right0010" x="256" y="492" width="258" height="497"/>
+	<SubTexture name="Geo Right0011" x="256" y="492" width="258" height="497"/>
+	<SubTexture name="Geo Right MISS0000" x="514" y="492" width="258" height="497"/>
+	<SubTexture name="Geo Right MISS0001" x="514" y="492" width="258" height="497"/>
+	<SubTexture name="Geo Right MISS0002" x="514" y="492" width="258" height="497"/>
+	<SubTexture name="Geo Right MISS0003" x="514" y="492" width="258" height="497"/>
+	<SubTexture name="Geo Right MISS0004" x="514" y="492" width="258" height="497"/>
+	<SubTexture name="Geo Right MISS0005" x="514" y="492" width="258" height="497"/>
+	<SubTexture name="Geo Up0000" x="772" y="492" width="263" height="505"/>
+	<SubTexture name="Geo Up0001" x="772" y="492" width="263" height="505"/>
+	<SubTexture name="Geo Up0002" x="772" y="492" width="263" height="505"/>
+	<SubTexture name="Geo Up0003" x="772" y="492" width="263" height="505"/>
+	<SubTexture name="Geo Up0004" x="772" y="492" width="263" height="505"/>
+	<SubTexture name="Geo Up0005" x="772" y="492" width="263" height="505"/>
+	<SubTexture name="Geo Up0006" x="772" y="492" width="263" height="505"/>
+	<SubTexture name="Geo Up0007" x="772" y="492" width="263" height="505"/>
+	<SubTexture name="Geo Up0008" x="772" y="492" width="263" height="505"/>
+	<SubTexture name="Geo Up0009" x="772" y="492" width="263" height="505"/>
+	<SubTexture name="Geo Up0010" x="772" y="492" width="263" height="505"/>
+	<SubTexture name="Geo Up0011" x="772" y="492" width="263" height="505"/>
+	<SubTexture name="Geo Up MISS0000" x="1035" y="492" width="276" height="491"/>
+	<SubTexture name="Geo Up MISS0001" x="1035" y="492" width="276" height="491"/>
+	<SubTexture name="Geo Up MISS0002" x="1035" y="492" width="276" height="491"/>
+	<SubTexture name="Geo Up MISS0003" x="1035" y="492" width="276" height="491"/>
+	<SubTexture name="Geo Up MISS0004" x="1035" y="492" width="276" height="491"/>
+	<SubTexture name="Geo Up MISS0005" x="1035" y="492" width="276" height="491"/>
+</TextureAtlas>

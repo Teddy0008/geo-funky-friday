@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="GeoFlamesBG.png">
+	<!-- Created with Adobe Animate version 21.0.5.40714 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Geo Flames BG0000" x="0" y="0" width="2538" height="1346"/>
+	<SubTexture name="Geo Flames BG0001" x="0" y="0" width="2538" height="1346"/>
+	<SubTexture name="Geo Flames BG0002" x="0" y="0" width="2538" height="1346"/>
+	<SubTexture name="Geo Flames BG0003" x="0" y="0" width="2538" height="1346"/>
+	<SubTexture name="Geo Flames BG0004" x="0" y="1346" width="2538" height="1346"/>
+	<SubTexture name="Geo Flames BG0005" x="0" y="1346" width="2538" height="1346"/>
+	<SubTexture name="Geo Flames BG0006" x="0" y="1346" width="2538" height="1346"/>
+	<SubTexture name="Geo Flames BG0007" x="0" y="1346" width="2538" height="1346"/>
+	<SubTexture name="Geo Flames BG0008" x="0" y="2692" width="2538" height="1346"/>
+	<SubTexture name="Geo Flames BG0009" x="0" y="2692" width="2538" height="1346"/>
+	<SubTexture name="Geo Flames BG0010" x="0" y="2692" width="2538" height="1346"/>
+	<SubTexture name="Geo Flames BG0011" x="0" y="2692" width="2538" height="1346"/>
+</TextureAtlas>
