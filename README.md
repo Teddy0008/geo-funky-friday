@@ -49,7 +49,7 @@ This game was made with love to Newgrounds and its community. Extra love to Tom 
 - [Teddy0007](https://twitter.com/Teddy00081) and []() - Coding
 - [Teddy0007](https://twitter.com/Teddy00081) - Github source code repository
 - []() - Art
-- []() - Music
+- [ChillSpace](https://twitter.com/ChillSpaceMusic) - Music
 
 **Teddy0007** (Coding and Github repo):
 - [YouTube](https://www.youtube.com/channel/UC1wZb88ENGqwcz6y9lGN38g)
@@ -57,3 +57,7 @@ This game was made with love to Newgrounds and its community. Extra love to Tom 
 - [Twitch](https://www.twitch.tv/realteddy0007)
 - [Twitter](https://twitter.com/Teddy00081)
 - [Discord Server](https://discord.gg/QetDWPs8HJ)
+
+**ChillSpace** (Music):
+- [Youtube](https://www.youtube.com/channel/UCQsz6IPEAtgclgvN1iUGSqA)
+- [Twitter](https://twitter.com/ChillSpaceMusic)
