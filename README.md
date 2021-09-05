@@ -46,7 +46,7 @@ This game was made with love to Newgrounds and its community. Extra love to Tom 
 
 ### Geo Funky Friday
 - []() - Mod idea and post
-- [Teddy0007](https://twitter.com/Teddy00081) and []() - Coding
+- [Teddy0007](https://twitter.com/Teddy00081) and gui - Coding
 - [Teddy0007](https://twitter.com/Teddy00081) - Github source code repository
 - []() - Art
 - [ChillSpace](https://twitter.com/ChillSpaceMusic) - Music
