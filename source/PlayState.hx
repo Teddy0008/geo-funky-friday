@@ -629,44 +629,6 @@ class PlayState extends MusicBeatState
 					bg.scrollFactor.set(0.8, 0.9);
 					bg.scale.set(6, 6);
 					add(bg);
-
-					/* 
-							var bg:FlxSprite = new FlxSprite(posX, posY).loadGraphic(Paths.image('weeb/evilSchoolBG'));
-							bg.scale.set(6, 6);
-							// bg.setGraphicSize(Std.int(bg.width * 6));
-							// bg.updateHitbox();
-							add(bg);
-							var fg:FlxSprite = new FlxSprite(posX, posY).loadGraphic(Paths.image('weeb/evilSchoolFG'));
-							fg.scale.set(6, 6);
-							// fg.setGraphicSize(Std.int(fg.width * 6));
-							// fg.updateHitbox();
-							add(fg);
-							wiggleShit.effectType = WiggleEffectType.DREAMY;
-							wiggleShit.waveAmplitude = 0.01;
-							wiggleShit.waveFrequency = 60;
-							wiggleShit.waveSpeed = 0.8;
-						*/
-
-					// bg.shader = wiggleShit.shader;
-					// fg.shader = wiggleShit.shader;
-
-					/* 
-								var waveSprite = new FlxEffectSprite(bg, [waveEffectBG]);
-								var waveSpriteFG = new FlxEffectSprite(fg, [waveEffectFG]);
-								// Using scale since setGraphicSize() doesnt work???
-								waveSprite.scale.set(6, 6);
-								waveSpriteFG.scale.set(6, 6);
-								waveSprite.setPosition(posX, posY);
-								waveSpriteFG.setPosition(posX, posY);
-								waveSprite.scrollFactor.set(0.7, 0.8);
-								waveSpriteFG.scrollFactor.set(0.9, 0.8);
-								// waveSprite.setGraphicSize(Std.int(waveSprite.width * 6));
-								// waveSprite.updateHitbox();
-								// waveSpriteFG.setGraphicSize(Std.int(fg.width * 6));
-								// waveSpriteFG.updateHitbox();
-								add(waveSprite);
-								add(waveSpriteFG);
-						*/
 			}
 			case 'stage':
 				{
@@ -707,18 +669,14 @@ class PlayState extends MusicBeatState
 				}
 				case 'geoFlames': 
 				{
+					defaultCamZoom = 0.6;
 					curStage = 'geoFlames';
-
-					var posX = -400;
-					var posY = -200;
-					
-					var bg:FlxSprite = new FlxSprite(posX, posY);
-
+					var bg:FlxSprite = new FlxSprite(-700, -300);
 					bg.frames = Paths.getSparrowAtlas('GeoFlamesBG','shared');
 					bg.animation.addByPrefix('idle', 'Geo Flames BG');
 					bg.animation.play('idle');
 					bg.scrollFactor.set(0.8, 0.9);
-					bg.scale.set(0.6, 0.6);
+					//bg.scale.set(0.6, 0.6);
 					add(bg);
 				}
 			default:
@@ -849,8 +807,18 @@ class PlayState extends MusicBeatState
 				boyfriend.y += 220;
 				gf.x += 180;
 				gf.y += 300;
-			case 'geo':
-				dad.y += 200;
+			case 'geo' | 'geoFlames':
+				dad.y += 400;
+				boyfriend.y = 600;
+				gf.y = 300;
+				gf.x = 200;
+			/*case 'geoFlames':
+				dad.y += 495;
+				dad.x += 400;
+				boyfriend.y = 700;
+				boyfriend.x += 400; 
+				gf.y = 300;
+				gf.x = 200;*/
 		}
 
 		add(gf);
@@ -2139,6 +2107,12 @@ class PlayState extends MusicBeatState
 
 				if (dad.curCharacter == 'mom')
 					vocals.volume = 1;
+				if (curStage == 'geo'){
+					camFollow.y = dad.getMidpoint().y - 270;
+				}
+				if (curStage == 'geoFlames'){
+					camFollow.y = dad.getMidpoint().y - 290;
+				}
 			}
 
 			if (PlayState.SONG.notes[Std.int(curStep / 16)].mustHitSection && camFollow.x != boyfriend.getMidpoint().x - 100)
@@ -2171,6 +2145,12 @@ class PlayState extends MusicBeatState
 					case 'schoolEvil':
 						camFollow.x = boyfriend.getMidpoint().x - 200;
 						camFollow.y = boyfriend.getMidpoint().y - 200;
+					case 'geo':
+						camFollow.y = boyfriend.getMidpoint().y - 300;
+						camFollow.x = boyfriend.getMidpoint().x - 200;
+					case 'geoFlames':
+						camFollow.y = boyfriend.getMidpoint().y - 350;
+						camFollow.x = boyfriend.getMidpoint().x - 200;
 				}
 			}
 		}
@@ -2624,6 +2604,12 @@ class PlayState extends MusicBeatState
 			else
 			{
 				trace('WENT BACK TO FREEPLAY??');
+
+				paused = true;
+
+				FlxG.sound.music.stop();
+				vocals.stop();
+
 				FlxG.switchState(new FreeplayState());
 			}
 		}
@@ -2692,7 +2678,7 @@ class PlayState extends MusicBeatState
 						totalNotesHit += 0.75;
 				case 'sick':
 					if (health < 2)
-						health += 0.1;
+						health += 0.04;
 					if (FlxG.save.data.accuracyMod == 0)
 						totalNotesHit += 1;
 					sicks++;
@@ -2706,14 +2692,6 @@ class PlayState extends MusicBeatState
 	
 			songScore += Math.round(score);
 			songScoreDef += Math.round(ConvertScore.convertScore(noteDiff));
-	
-			/* if (combo > 60)
-					daRating = 'sick';
-				else if (combo > 12)
-					daRating = 'good'
-				else if (combo > 4)
-					daRating = 'bad';
-			 */
 	
 			var pixelShitPart1:String = "";
 			var pixelShitPart2:String = '';
@@ -2863,6 +2841,12 @@ class PlayState extends MusicBeatState
 					numScore.setGraphicSize(Std.int(numScore.width * daPixelZoom));
 				}
 				numScore.updateHitbox();
+
+				if (curStage == 'geo' || curStage == 'geoFlames')
+				{
+					numScore.scale.set(0.35, 0.35);
+					rating.scale.set(0.4, 0.4);
+				}
 	
 				numScore.acceleration.y = FlxG.random.int(200, 300);
 				numScore.velocity.y -= FlxG.random.int(140, 160);
@@ -3172,26 +3156,6 @@ class PlayState extends MusicBeatState
 		}
 	}
 
-	/*function badNoteCheck()
-		{
-			// just double pasting this shit cuz fuk u
-			// REDO THIS SYSTEM!
-			var upP = controls.UP_P;
-			var rightP = controls.RIGHT_P;
-			var downP = controls.DOWN_P;
-			var leftP = controls.LEFT_P;
-	
-			if (leftP)
-				noteMiss(0);
-			if (upP)
-				noteMiss(2);
-			if (rightP)
-				noteMiss(3);
-			if (downP)
-				noteMiss(1);
-			updateAccuracy();
-		}
-	*/
 	function updateAccuracy() 
 		{
 			totalPlayed += 1;
@@ -3227,44 +3191,10 @@ class PlayState extends MusicBeatState
 			var noteDiff:Float = Math.abs(note.strumTime - Conductor.songPosition);
 
 			note.rating = Ratings.CalculateRating(noteDiff);
-
-			/* if (loadRep)
-			{
-				if (controlArray[note.noteData])
-					goodNoteHit(note, false);
-				else if (rep.replay.keyPresses.length > repPresses && !controlArray[note.noteData])
-				{
-					if (NearlyEquals(note.strumTime,rep.replay.keyPresses[repPresses].time, 4))
-					{
-						goodNoteHit(note, false);
-					}
-				}
-			} */
 			
 			if (controlArray[note.noteData])
 			{
 				goodNoteHit(note, (mashing > getKeyPresses(note)));
-				
-				/*if (mashing > getKeyPresses(note) && mashViolations <= 2)
-				{
-					mashViolations++;
-
-					goodNoteHit(note, (mashing > getKeyPresses(note)));
-				}
-				else if (mashViolations > 2)
-				{
-					// this is bad but fuck you
-					playerStrums.members[0].animation.play('static');
-					playerStrums.members[1].animation.play('static');
-					playerStrums.members[2].animation.play('static');
-					playerStrums.members[3].animation.play('static');
-					health -= 0.4;
-					trace('mash ' + mashing);
-					if (mashing != 0)
-						mashing = 0;
-				}
-				else
-					goodNoteHit(note, false);*/
 
 			}
 		}
@@ -3421,8 +3351,6 @@ class PlayState extends MusicBeatState
 			gf.playAnim('hairFall');
 			phillyTrain.x = FlxG.width + 200;
 			trainMoving = false;
-			// trainSound.stop();
-			// trainSound.time = 0;
 			trainCars = 8;
 			trainFinishing = false;
 			startedMoving = false;
@@ -3598,7 +3526,6 @@ class PlayState extends MusicBeatState
 						curLight = FlxG.random.int(0, phillyCityLights.length - 1);
 	
 						phillyCityLights.members[curLight].visible = true;
-						// phillyCityLights.members[curLight].alpha = 1;
 				}
 
 				}

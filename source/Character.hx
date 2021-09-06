@@ -140,7 +140,7 @@ class Character extends FlxSprite
 
 				playAnim('idle');
 
-			case 'geo':
+			case 'geo' | 'geomad':
 				// GEO ANIMATION LOADING CODE
 				tex = Paths.getSparrowAtlas('characters/geo_assets', 'shared');
 				frames = tex;
@@ -163,50 +163,6 @@ class Character extends FlxSprite
 				addOffset("singRIGHTmiss", -30, 21);
 				addOffset("singLEFTmiss", 12, 24);
 				addOffset("singDOWNmiss", -11, -19);
-				/*addOffset('idle');
-				addOffset("singUP", -6, 50);
-				addOffset("singRIGHT", 0, 27);
-				addOffset("singLEFT", -10, 10);
-				addOffset("singDOWN", 0, -30);
-				addOffset("singUPmiss", -6, 50);
-				addOffset("singRIGHTmiss", 0, 27);
-				addOffset("singLEFTmiss", -10, 10);
-				addOffset("singDOWNmiss", 0, -30);*/
-
-				playAnim('idle');
-
-			case 'geomad':
-				// GEOMAD ANIMATION LOADING CODE
-				tex = Paths.getSparrowAtlas('characters/geo_assets', 'shared');
-				frames = tex;
-				animation.addByPrefix('idle', 'Geo Idle', 24);
-				animation.addByPrefix('singUP', 'Geo Up0', 24);
-				animation.addByPrefix('singRIGHT', 'Geo Right0', 24);
-				animation.addByPrefix('singDOWN', 'Geo Down0', 24);
-				animation.addByPrefix('singLEFT', 'Geo Left0', 24);
-				animation.addByPrefix('singUPmiss', 'Geo Up MISS', 24);
-				animation.addByPrefix('singRIGHTmiss', 'Geo Right MISS', 24);
-				animation.addByPrefix('singDOWNmiss', 'Geo Down MISS', 24);
-				animation.addByPrefix('singLEFTmiss', 'Geo Left MISS', 24);
-
-				addOffset('idle', -5);
-				addOffset("singUP", -29, 27);
-				addOffset("singRIGHT", -38, -7);
-				addOffset("singLEFT", 12, -6);
-				addOffset("singDOWN", -10, -50);
-				addOffset("singUPmiss", -29, 27);
-				addOffset("singRIGHTmiss", -30, 21);
-				addOffset("singLEFTmiss", 12, 24);
-				addOffset("singDOWNmiss", -11, -19);
-				/*addOffset('idle');
-				addOffset("singUP", -6, 50);
-				addOffset("singRIGHT", 0, 27);
-				addOffset("singLEFT", -10, 10);
-				addOffset("singDOWN", 0, -30);
-				addOffset("singUPmiss", -6, 50);
-				addOffset("singRIGHTmiss", 0, 27);
-				addOffset("singLEFTmiss", -10, 10);
-				addOffset("singDOWNmiss", 0, -30);*/
 
 				playAnim('idle');
 
